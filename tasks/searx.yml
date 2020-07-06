@@ -1,0 +1,20 @@
+---
+  -
+    name: clone git-repository
+    git:
+      repo: https://github.com/asciimoo/searx.git
+      dest: searx
+
+  -
+    name: Install searx
+    shell: |
+      cd searx
+      sudo -H ./utils/searx.sh install all
+
+  -
+    name: Install filtron reverse-proxy
+    shell: sudo -H ./utils/filtron.sh install all
+
+  -
+    name: Install result-proxy - Morty
+    shell: sudo -H ./utils/morty.sh install all

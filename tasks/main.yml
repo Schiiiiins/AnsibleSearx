@@ -1,0 +1,11 @@
+---
+  name: Create an instance of searx meta search-engine
+
+  - import_tasks: dependecies.yml
+
+  - name: Setting up searx
+    import_tasks: searx.yml
+
+  - name: Configure Nginx
+    import_tasks: nginx.yml
+# tasks file for searx

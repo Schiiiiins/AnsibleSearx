@@ -1,0 +1,10 @@
+---
+  -
+    name: Nginx configuration-file
+    copy:
+      src: "{{ role_path }}"/files/searx
+      dest: /etc/nginx/sites-available
+
+  -
+    name: Add symling
+    shell: sudo -H ln -s /etc/nginx/sites-available/searx /etc/nginx/sites-enabled/searx
