@@ -6,5 +6,5 @@
       dest: /etc/nginx/sites-available
 
   -
-    name: Add symling
+    name: Add symlink
     shell: sudo -H ln -s /etc/nginx/sites-available/searx /etc/nginx/sites-enabled/searx
