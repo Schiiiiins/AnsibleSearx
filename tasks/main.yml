@@ -6,6 +6,6 @@
   - name: Setting up searx
     import_tasks: searx.yml
 
-  - name: Configure Nginx
+  - name: Configure nginx
     import_tasks: nginx.yml
-# tasks file for searx
+    

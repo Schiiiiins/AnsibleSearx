@@ -8,3 +8,10 @@
   -
     name: Add symlink
     shell: sudo -H ln -s /etc/nginx/sites-available/searx /etc/nginx/sites-enabled/searx
+    
+  - 
+    name: restart nginx
+    systemd:
+        state: restarted
+        deamon_reload: yes
+        name: nginx
